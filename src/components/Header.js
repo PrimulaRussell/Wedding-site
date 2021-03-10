@@ -29,7 +29,7 @@ const Header = () => {
     <MainDiv>
       <Title>Marge & Randy</Title>
       <Underline></Underline>
-      <Info>August 22nd, 2022</Info>
+      <Info>August 13nd, 2022</Info>
       <Info>
         8585 El Dorado Rd.
         <br />

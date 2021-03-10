@@ -78,7 +78,7 @@ const Navbar = () => {
       <MainNavDiv>
         <UlLinks>
           <LiLinks>
-            <A href="https://www.facebook.com/We-Choose-This-Life-The-Randell-Jones-Marjorie-Senechal-Wedding-Page-107092668105344">
+            <A href="https://margeandrandy.netlify.app/registry">
               Registry
             </A>
           </LiLinks>
