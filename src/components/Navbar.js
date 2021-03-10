@@ -41,7 +41,7 @@ const LiRegister = styled.li`
   }
 `;
 const Hr = styled.hr`
-  background-color: #2d9900;
+  background-color: #6c0099;
   height: 1px;
   border: none;
   margin: 0;

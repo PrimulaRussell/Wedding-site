@@ -8,28 +8,32 @@ import Image3 from "../img/image_3.jpg";
 import Image4 from "../img/image_4.jpg";
 import Image5 from "../img/image_5.jpg";
 
-//Styled Components//y
+//Styled Components//
+
+const MainDiv = styled.div `
+background-color: #365F25;
+`
 const Img = styled.img`
   width: auto;
   height: 500px;
   object-fit: fit;
   position: relative;
-  margin-top: 2%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2% auto auto;
+  border: 1px solid #6c0099;
+  border-radius: 5px;
 `;
 const Carousel = () => {
   return (
-    <div>
-      <AliceCarousel autoPlay autoPlayInterval="3000">
+    <MainDiv>
+      <AliceCarousel autoPlay autoPlayInterval="3000" infinite>
         <Img src={Image1} alt="image1 of Randy and Marge" />
         <Img src={Image2} alt="image2 of Randy and Marge" />
         <Img src={Image3} alt="image3 of Randy and Marge" />
         <Img src={Image4} alt="image4 of Randy and Marge" />
         <Img src={Image5} alt="image5 of Randy and Marge" />
       </AliceCarousel>
-    </div>
+    </MainDiv>
   );
 };
 
