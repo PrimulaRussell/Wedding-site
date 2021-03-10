@@ -5,7 +5,7 @@ import styled from "styled-components";
 const MainNavDiv = styled.div`
   display: flex;
   justify-content: space-between;
-  color: #2d9900;
+  color: #365f25;
 `;
 const UlLinks = styled.ul`
   list-style: none;
@@ -24,9 +24,15 @@ const UlRegister = styled.ul`
 const A = styled.a`
   text-decoration: none;
   padding: 0;
+
   &:hover {
-    color: #2d9900;
+    color: #365f25;
   }
+`;
+const ASignUp = styled.a`
+  text-decoration: none;
+  padding: 0;
+  color: #fff;
 `;
 const LiLinks = styled.li`
   padding: 0 10px;
@@ -34,10 +40,27 @@ const LiLinks = styled.li`
 const LiRegister = styled.li`
   padding: 10px;
   margin: -20px 10px 0;
-  border: 1px solid #2d9900;
+  background-color: #365f25;
   border-radius: 5px;
+  &:hover {
+    border: 1px solid #6c0099;
+    padding: 9px;
+  }
+  &:hover ${ASignUp} {
+    color: #6c0099;
+  }
+`;
+
+const LiLogOn = styled.li`
+  padding: 10px;
+  margin: -20px 10px 0;
+  border: 1px solid #6c0099;
+  border-radius: 5px;
+  &:hover {
+    border: 1px solid #365f25;
+  }
   &:hover ${A} {
-    color: #2d9900;
+    color: #365f25;
   }
 `;
 const Hr = styled.hr`
@@ -83,16 +106,16 @@ const Navbar = () => {
         <UlRegister>
           <LiRegister>
             {" "}
-            <A href="https://www.facebook.com/We-Choose-This-Life-The-Randell-Jones-Marjorie-Senechal-Wedding-Page-107092668105344">
+            <ASignUp href="https://www.facebook.com/We-Choose-This-Life-The-Randell-Jones-Marjorie-Senechal-Wedding-Page-107092668105344">
               Sign Up
-            </A>
+            </ASignUp>
           </LiRegister>
-          <LiRegister>
+          <LiLogOn>
             {" "}
             <A href="https://www.facebook.com/We-Choose-This-Life-The-Randell-Jones-Marjorie-Senechal-Wedding-Page-107092668105344">
               Log In
             </A>
-          </LiRegister>
+          </LiLogOn>
         </UlRegister>
       </MainNavDiv>
       <Hr></Hr>

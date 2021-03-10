@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import '../styles/Carousel.css'
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import Image1 from "../img/image_1.jpg";
@@ -12,6 +13,7 @@ import Image5 from "../img/image_5.jpg";
 
 const MainDiv = styled.div `
 background-color: #365F25;
+padding-bottom: 20px;
 `
 const Img = styled.img`
   width: auto;

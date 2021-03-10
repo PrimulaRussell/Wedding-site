@@ -1,0 +1,25 @@
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+    position: absolute;
+    bottom: 40%;
+    width: auto;
+    font-size: 7rem;
+}
+.alice-carousel__prev-btn {
+    left: 10%;
+}
+.alice-carousel__next-btn {
+    left: 90%;
+    width: auto;
+}
+span {
+    color: #6c0099;
+}
+span:hover {
+    color: #fff;
+}
+.alice-carousel__next-btn-wrapper {
+    width:0;
+}
+
+    
