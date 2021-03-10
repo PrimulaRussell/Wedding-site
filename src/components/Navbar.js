@@ -24,7 +24,7 @@ const UlRegister = styled.ul`
 const A = styled.a`
   text-decoration: none;
   padding: 0;
-
+font-size: 20px;
   &:hover {
     color: #365f25;
   }
@@ -32,6 +32,7 @@ const A = styled.a`
 const ASignUp = styled.a`
   text-decoration: none;
   padding: 0;
+  font-size: 20px;
   color: #fff;
 `;
 const LiLinks = styled.li`
