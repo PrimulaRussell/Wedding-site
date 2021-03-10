@@ -78,7 +78,7 @@ const Navbar = () => {
       <MainNavDiv>
         <UlLinks>
           <LiLinks>
-            <A href="https://margeandrandy.netlify.app/registry">
+            <A href="/registry">
               Registry
             </A>
           </LiLinks>
