@@ -4,11 +4,15 @@ import styled from "styled-components";
 //Styled Components//
 const MainDiv = styled.div `
   color: #6c0099;
+  background-color: #fff;
 `;
-const Title = styled.p `
+const Title = styled.a `
+  color:#6c0099;
   text-align: center;
   font-size: 3rem;
   margin: 15px;
+  text-decoration: none;
+  display:block;
 `;
 const Underline = styled.div `
 border-top: 1px solid #6c0099;
@@ -27,7 +31,7 @@ const Info = styled.p `
 const Header = () => {
   return (
     <MainDiv>
-      <Title>Marge & Randy</Title>
+      <Title href="/">Marge & Randy</Title>
       <Underline></Underline>
       <Info>August 13nd, 2022</Info>
       <Info>

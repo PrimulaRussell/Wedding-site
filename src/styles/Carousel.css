@@ -6,11 +6,10 @@
     font-size: 7rem;
 }
 .alice-carousel__prev-btn {
-    left: 10%;
+    left: -35% ;
 }
 .alice-carousel__next-btn {
     left: 90%;
-    width: auto;
 }
 span {
     color: #6c0099;

@@ -10,18 +10,19 @@ padding: 5%;
 const Container = styled.div `
 border: 1px solid #365f25;
 background-color: #fff;
-width: 40%;
+width: 60%;
+height: 70%;
 margin:auto;
 `
 const Title = styled.p `
-font-size: 20px;
+font-size: 2rem;
 color: #365f25;
 text-align: center;
 `
 //RegistryContainer Component//
 const RegistryContainer = () => {
     return (
-        <MainDiv>
+            <MainDiv>
         <Container>
             <Title>Registry</Title>
             <RegistryList></RegistryList>
