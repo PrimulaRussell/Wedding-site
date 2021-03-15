@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles/App.css';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import RegistryContainer from './components/RegistryContainer';
+import Header from '../Header';
+import Navbar from '../Navbar';
+import RegistryContainer from '../RegistryContainer';
 
 //Registry Component//
 const Registry = () => {
