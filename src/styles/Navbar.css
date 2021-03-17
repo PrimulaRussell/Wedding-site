@@ -1,0 +1,16 @@
+
+.navUl {
+    width: 75%;
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.521);
+    margin: auto;
+    padding: 10px;
+}
+
+.Nav {
+    text-decoration: none;
+}
+
+li {
+    margin:10px;
+}

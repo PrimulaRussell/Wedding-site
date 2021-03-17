@@ -8,12 +8,12 @@ import Image2 from "../img/image_2.jpg";
 import Image3 from "../img/image_3.jpg";
 import Image4 from "../img/image_4.jpg";
 import Image5 from "../img/image_5.jpg";
+import Background from "../img/sunset_bg.jpg"
 
 //Styled Components//
 
 const MainDiv = styled.div `
-background-color: #365F25;
-padding-bottom: 20px;
+
 `
 const Img = styled.img`
   width: auto;

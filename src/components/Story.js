@@ -7,10 +7,10 @@ const Header = styled.p `
 text-align: center;
 font-size: 3rem;
 margin: 20px auto 5px auto;
-color: #6c0099;
+color: #000749;
 `
 const Underline = styled.div `
-border-top: 1px solid #6c0099;
+border-top: 1px solid #000749;
 width: 25%;
 margin: 0 auto;
 `
@@ -18,7 +18,9 @@ const Para = styled.p `
 text-align: center;
 font-size: 1.5rem;
 margin: 15px 5% 10%;
-color: #6c0099;
+background: -webkit-linear-gradient(#000749, #5a0096,  #960000, #e2a107, #f3d410);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 `
 //Story Component//
 const Story = () => {

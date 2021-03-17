@@ -1,6 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
+html {
+  margin: 0;
+}
 body {
-    font-family: 'Dancing Script';
-    margin: 0;
+  font-family: "Dancing Script";
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-image: url("../img/sunset_bg.jpg");
+  background-size: 100%;
+  height: 100vh;
+  padding: 40px;
+}
+
+.MainDiv {
+  background-color: #fff;
+}
+.NavTitle {
+  color: #000749;
+  text-align: center;
+  font-size: 3rem;
+  margin: 15px;
+  text-decoration: none;
+  display: block;
+}
+.Info {
+  color: #000749;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.flexReg {
+  list-style-type: none;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.NavReg,
+.NavLog {
+  text-decoration: none;
+  color: #40005c;
+}
+
+.NavLog {
+  border: 1px solid #40005c;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.Underline {
+  border-top: 1px solid #000749;
+  width: 25%;
+  margin: 0 auto;
 }

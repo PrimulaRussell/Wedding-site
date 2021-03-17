@@ -4,7 +4,6 @@ import RegistryList from './RegistryList';
 
 //Styled Components//
 const MainDiv = styled.div `
-background-color: #6c0099;
 padding: 5%;
 `
 const Container = styled.div `
@@ -20,7 +19,7 @@ color: #365f25;
 text-align: center;
 `
 //RegistryContainer Component//
-const RegistryContainer = () => {
+const Registry = () => {
     return (
             <MainDiv>
         <Container>
@@ -31,4 +30,4 @@ const RegistryContainer = () => {
     );
 };
 
-export default RegistryContainer;
+export default Registry;
