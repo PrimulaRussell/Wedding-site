@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink, HashRouter } from "react-router-dom";
 import "./styles/App.css";
-import Navbar from "./components/Navbar";
+import Content from "./components/Content";
 
 const App = () => {
   return (
     <HashRouter>
-      <div className="MainDiv">
+      <div>
         <NavLink to="/" className="NavTitle">
           Marge & Randy
         </NavLink>
@@ -29,11 +29,7 @@ const App = () => {
             </NavLink>
           </li>
         </ul>
-
-        <div className="background">
-          <Navbar></Navbar>
-
-        </div>
+        <Content></Content>
       </div>
     </HashRouter>
   );

@@ -1,35 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
-html {
-  margin: 0;
-}
 body {
   font-family: "Dancing Script";
   margin: 0;
   padding: 0;
 }
 
-.background {
-  background-image: url("../img/sunset_bg.jpg");
-  background-size: 100%;
-  height: 100vh;
-  padding: 40px;
+.NavTitle,
+.Info {
+  background: linear-gradient(
+    to right,
+    #abbff5 40%,
+    #da9afb,
+    #fda3de,
+    #fca259,
+    #f7533e 60%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
-.MainDiv {
-  background-color: #fff;
-}
-.NavTitle {
-  color: #000749;
+.NavTitle,
+.Info {
   text-align: center;
+}
+.NavTitle{
   font-size: 3rem;
-  margin: 15px;
+  margin: 0 15px;
+  padding: 15px 0;
   text-decoration: none;
   display: block;
 }
 .Info {
-  color: #000749;
-  text-align: center;
   font-size: 1rem;
   letter-spacing: 1px;
   font-weight: bold;
@@ -47,17 +52,25 @@ body {
 .NavReg,
 .NavLog {
   text-decoration: none;
-  color: #40005c;
+  color: #da9afb;
+  margin: 5px;
 }
 
+.NavReg:hover,
+.NavLog:hover {
+  color: #f7533e;
+}
+.NavLog:hover {
+  border: 1px solid #f7533e;
+}
 .NavLog {
-  border: 1px solid #40005c;
+  border: 1px solid #da9afb;
   border-radius: 5px;
   padding: 5px;
 }
 
 .Underline {
-  border-top: 1px solid #000749;
+  border-top: 1px solid #fda3de;
   width: 25%;
   margin: 0 auto;
 }
