@@ -11,6 +11,7 @@ import Image5 from "../img/image_5.jpg";
 
 const Carousel = () => {
   return (
+    <div className="Carousel">
       <AliceCarousel autoPlay autoPlayInterval="3000" infinite>
         <img class="Img" src={Image1} alt="image1 of Randy and Marge" />
         <img class="Img" src={Image2} alt="image2 of Randy and Marge" />
@@ -18,6 +19,7 @@ const Carousel = () => {
         <img class="Img" src={Image4} alt="image4 of Randy and Marge" />
         <img class="Img" src={Image5} alt="image5 of Randy and Marge" />
       </AliceCarousel>
+      </div>
   );
 };
 

@@ -1,11 +1,18 @@
 import React from "react";
-import { NavLink, HashRouter } from "react-router-dom";
+import { Route, NavLink, HashRouter } from "react-router-dom";
 import "./styles/App.css";
-import Content from "./components/Content";
+import Registry from "./components/Registry.js";
+import Photos from "./components/photos";
+import Story from "./components/Story";
+import Updates from "./components/update";
+import Zoom from "./components/zoom";
+import Carousel from "./components/Carousel";
 
 const App = () => {
   return (
     <HashRouter>
+
+      {/* Header */}
       <div>
         <NavLink to="/" className="NavTitle">
           Marge & Randy
@@ -17,6 +24,8 @@ const App = () => {
           <br />
           Atascadero, CA 93422
         </p>
+
+        {/* Registration Buttons */}
         <ul className="flexReg">
           <li>
             <NavLink to="/registry" className="NavReg">
@@ -29,8 +38,58 @@ const App = () => {
             </NavLink>
           </li>
         </ul>
-        <Content></Content>
       </div>
+
+      {/* Content Section Background */}
+      <div className="Wrapper">
+
+          {/* Navigation Items */}
+        <ul className="navUl">
+          <li>
+            <NavLink to="/registry" className="Nav">
+              Registry
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/photos" className="Nav">
+              Photos
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/story" className="Nav">
+              Our Story
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/updates" className="Nav">
+              Updates
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/https://www.facebook.com/We-Choose-This-Life-The-Randell-Jones-Marjorie-Senechal-Wedding-Page-107092668105344"
+              className="Nav"
+            >
+              Facebook Page
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/zoom" className="Nav">
+              Zoom
+            </NavLink>
+          </li>
+        </ul>
+
+          {/* Content Container */}
+        <div className="Content">
+          <Route exact path="/" component={Carousel} />
+          <Route exact path="/registry" component={Registry} />
+          <Route exact path="/photos" component={Photos} />
+          <Route exact path="/story" component={Story} />
+          <Route exact path="/updates" component={Updates} />
+          <Route exact path="/zoom" component={Zoom} />
+        </div>
+        </div>
     </HashRouter>
   );
 };

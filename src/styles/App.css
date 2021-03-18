@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+/*All*/
 
 body {
   font-family: "Dancing Script";
   margin: 0;
   padding: 0;
 }
+
+/*Static Page Header*/
 
 .NavTitle,
 .Info {
@@ -27,7 +30,7 @@ body {
 .Info {
   text-align: center;
 }
-.NavTitle{
+.NavTitle {
   font-size: 3rem;
   margin: 0 15px;
   padding: 15px 0;
@@ -73,4 +76,41 @@ body {
   border-top: 1px solid #fda3de;
   width: 25%;
   margin: 0 auto;
+}
+
+/* Content Container Background */
+
+.Wrapper {
+  background-image: url("../img/sunset_bg.jpg");
+  background-size: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/*Nav Items*/
+.navUl {
+  list-style-type: none;
+  display: flex;
+}
+
+.Nav {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fca259;
+}
+
+.Nav:hover {
+  color: #f7533e;
+}
+
+.navUl li {
+  padding: 20px;
+}
+
+/* Content Container */
+.Content {
+  margin: auto;
+  width:75%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.678);
 }
