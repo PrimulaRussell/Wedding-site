@@ -1,7 +1,6 @@
-import React from 'react'
-import Story from './Story'
-import Carousel from './Carousel'
-import '../styles/Home.css'
+import React from 'react';
+import Story from './Story';
+import Carousel from './Carousel';
 
 const Home = () => {
     return (
