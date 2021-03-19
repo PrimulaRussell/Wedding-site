@@ -1,7 +1,21 @@
 .Carousel {
-    margin: auto;
+  margin: 3% auto;
+  position: relative;
 }
-.Img {
-    height:auto;
-    margin: 5%;
+
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+  font-weight: 900;
+  font-size: 90px;
+  left: -10vh;
+  position: absolute;
+  top: 30%;
+}
+
+.alice-carousel__prev-btn {
+  left: -35%;
+}
+
+.alice-carousel__next-btn {
+  left: 63%;
 }
