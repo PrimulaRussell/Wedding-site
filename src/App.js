@@ -52,7 +52,7 @@ const App = () => {
           </li>
           <li>
             <NavLink to="/photos" className="Nav">
-              Photos
+              Gallery
             </NavLink>
           </li>
           <li>
