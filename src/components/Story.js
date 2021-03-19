@@ -22,7 +22,7 @@ const Para = styled.p`
   font-size: 1em;
   margin: 10px auto;
   color: #f7533e;
-  width: 40%;
+  width: 60%;
 `;
 //Story Component//
 const Story = () => {

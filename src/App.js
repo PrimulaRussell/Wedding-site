@@ -3,10 +3,10 @@ import { Route, NavLink, HashRouter } from "react-router-dom";
 import "./styles/App.css";
 import Registry from "./components/Registry.js";
 import Photos from "./components/photos";
-import Story from "./components/Story";
 import Updates from "./components/update";
 import Zoom from "./components/zoom";
-import Carousel from "./components/Carousel";
+import Home from './components/Home'
+
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
           Marge & Randy
         </NavLink>
         <div className="Underline"></div>
-        <p className="Info">August 13nd, 2022</p>
+        <p className="Info">August 13th, 2022</p>
         <p className="Info">
           8585 El Dorado Rd.
           <br />
@@ -56,11 +56,6 @@ const App = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/story" className="Nav">
-              Our Story
-            </NavLink>
-          </li>
-          <li>
             <NavLink to="/updates" className="Nav">
               Updates
             </NavLink>
@@ -82,10 +77,9 @@ const App = () => {
 
           {/* Content Container */}
         <div className="Content">
-          <Route exact path="/" component={Carousel} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/registry" component={Registry} />
           <Route exact path="/photos" component={Photos} />
-          <Route exact path="/story" component={Story} />
           <Route exact path="/updates" component={Updates} />
           <Route exact path="/zoom" component={Zoom} />
         </div>
