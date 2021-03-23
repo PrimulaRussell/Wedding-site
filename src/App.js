@@ -1,17 +1,15 @@
-import React from "react";
-import { Route, NavLink, HashRouter } from "react-router-dom";
-import "./styles/App.css";
-import Registry from "./components/Registry.js";
-import Photos from "./components/photos";
-import Updates from "./components/update";
-import Zoom from "./components/zoom";
-import Home from './components/Home'
-
+import React from 'react';
+import { Route, NavLink, HashRouter } from 'react-router-dom';
+import './styles/App.css';
+import Registry from './components/Registry.js';
+import Photos from './components/photos';
+import Updates from './components/update';
+import Zoom from './components/zoom';
+import Home from './components/Home';
 
 const App = () => {
   return (
     <HashRouter>
-
       {/* Header */}
       <div>
         <NavLink to="/" className="NavTitle">
@@ -28,13 +26,18 @@ const App = () => {
         {/* Registration Buttons */}
         <ul className="flexReg">
           <li>
-            <NavLink to="/registry" className="NavReg">
+            <NavLink to="/register" className="NavReg">
               Sign Up
             </NavLink>
           </li>
           <li>
-            <NavLink to="/registry" className="NavLog">
-              Log In
+            <NavLink to="/login" className="NavLog">
+              Login
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/logout" className="NavLog">
+              Logout
             </NavLink>
           </li>
         </ul>
@@ -42,8 +45,7 @@ const App = () => {
 
       {/* Content Section Background */}
       <div className="Wrapper">
-
-          {/* Navigation Items */}
+        {/* Navigation Items */}
         <ul className="navUl">
           <li>
             <NavLink to="/registry" className="Nav">
@@ -75,7 +77,7 @@ const App = () => {
           </li>
         </ul>
 
-          {/* Content Container */}
+        {/* Content Container */}
         <div className="Content">
           <Route exact path="/" component={Home} />
           <Route exact path="/registry" component={Registry} />
@@ -83,7 +85,7 @@ const App = () => {
           <Route exact path="/updates" component={Updates} />
           <Route exact path="/zoom" component={Zoom} />
         </div>
-        </div>
+      </div>
     </HashRouter>
   );
 };

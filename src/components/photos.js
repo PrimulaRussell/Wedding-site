@@ -1,12 +1,8 @@
-import React from 'react'
-import '../styles/photos.css'
+import React from 'react';
+import '../styles/photos.css';
 
 const Photos = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return <div></div>;
+};
 
 export default Photos;
