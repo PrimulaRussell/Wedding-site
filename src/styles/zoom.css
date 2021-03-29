@@ -1,15 +1,15 @@
 .zoom-wrapper {
-    padding:5%;
+  padding: 5%;
 }
 .zoom-p {
-    width: 75%;
-    margin: auto;
-    padding-bottom: 3%;
-    color: #f7533e;
-    font-size: 1.5rem;
+  width: 75%;
+  margin: auto;
+  padding-bottom: 3%;
+  color: #f7533e;
+  font-size: 1.5rem;
 }
 
 .zoom-link {
-    color: #fca259;
-    font-size: 1.5rem;
+  color: #fca259;
+  font-size: 1.5rem;
 }
