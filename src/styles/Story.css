@@ -1,25 +1,15 @@
-.mainDiv {
-  height: 40vh;
-  position: relative;
-}
-
 .header {
   text-align: center;
-  font-size: 2.5rem;
-  margin: 20px auto 5px auto;
-  color: #f7533e;
-}
-
-.underline {
-  border-top: 1px solid #f7533e;
-  width: 25%;
-  margin: 0 auto;
+  font-size: 3rem;
+  margin: 2% auto 5% auto;
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  text-decoration-thickness: 1px;
 }
 
 .para {
   text-align: center;
   font-size: 1em;
   margin: 10px auto;
-  color: #f7533e;
   width: 60%;
 }

@@ -1,120 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 /*All*/
-
-body {
-  font-family: 'Dancing Script';
+* {
+  color: rgb(34, 29, 110);
+  font-family: "Montserrat";
   margin: 0;
   padding: 0;
 }
 
-/*Static Page Header*/
-
-.NavTitle,
-.Info {
-  background: linear-gradient(
-    to right,
-    #abbff5 40%,
-    #da9afb,
-    #fda3de,
-    #fca259,
-    #f7533e 60%
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #91eff6,
+    #adeee9,
+    #c8eddc,
+    #fff,
+    #e4ebcf,
+    #ffeac2
   );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-}
-
-.NavTitle,
-.Info {
-  text-align: center;
-}
-.NavTitle {
-  font-size: 3rem;
-  margin: 0 15px;
-  padding: 15px 0;
-  text-decoration: none;
-  display: block;
-}
-.Info {
-  font-size: 1rem;
-  letter-spacing: 1px;
-  font-weight: bold;
-  margin: 10px;
-}
-
-.flexReg {
-  list-style-type: none;
-  display: flex;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.NavReg,
-.NavLog {
-  text-decoration: none;
-  color: #da9afb;
-  margin: 5px;
-}
-
-.NavReg:hover,
-.NavLog:hover {
-  color: #f7533e;
-}
-.NavLog:hover {
-  border: 1px solid #f7533e;
-}
-.NavLog {
-  border: 1px solid #da9afb;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.Underline {
-  border-top: 1px solid #fda3de;
-  width: 25%;
-  margin: 0 auto;
-}
-
-/* Content Container Background */
-
-.Wrapper {
-  background-image: url('../img/sunset_bg.jpg');
-  background-size: auto;
   background-repeat: no-repeat;
-  padding: 0 0 5%;
+  background-size: cover;
+  height: 100%;
+  min-height: 100vh;
 }
 
-/*Nav Items*/
-.navUl {
+/*Multiple Selectiors*/
+
+.navTitle,
+.navBar li {
+  margin: auto 0;
+}
+
+/*Navbar*/
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.808);
+}
+.navTitle {
+  text-align: center;
+  font-family: "Dancing Script";
+  font-size: 4rem;
+  text-decoration: none;
+  padding-bottom: 2%;
+}
+.navBar {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.397);
-  margin-bottom: 4%;
 }
-
-.Nav {
-  font-size: 1.5rem;
-  color: #fca259;
+.nav {
+  text-decoration: none;
 }
-
-.Nav:hover {
-  color: #f7533e;
+.navBar li {
+  padding: 10px;
 }
-
-.navUl li {
-  padding: 20px;
+.navBar li :hover {
+  color: #8098e6;
+}
+.signUp {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.login {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 0.4em;
+  text-decoration: none;
 }
 
 /* Content Container */
-.Content {
-  margin: auto;
-  width: 65%;
+
+.wrapper {
+  width: 80%;
+  min-height: 350px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.596);
+  margin: 3% auto;
+  padding: 3%;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.678);
-  height: 80%;
-  overflow: hidden;
 }
